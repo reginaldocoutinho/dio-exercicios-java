@@ -49,7 +49,7 @@ public class Carro {
         } else{
             System.out.println("Para virar a Esquerda o carro precisa estar em movimento!");
         }
-        if(direcao.equalsIgnoreCase("Reto")){
+        if(direcao.equalsIgnoreCase("reto")){
             this.direcao ="Reto";
         }
     }
@@ -110,10 +110,6 @@ public class Carro {
                 flagCarroEstaEngatado = true;
                 marcha = marchaSelecionada;
             }
-//            else if(velocidade == 0 && marcha == 0 && marchaSelecionada == 1){
-//                flagCarroEstaEngatado = true;
-//                marcha = marchaSelecionada;
-//            }else{
 
             }
 
@@ -125,7 +121,7 @@ public class Carro {
     public void acelerar(){
          if(velocidade < velocidadeMax){
              velocidade = Math.min( velocidade + 5, velocidadeMaxMarcha);
-             if(velocidade == velocidadeMaxMarcha){
+             if(velocidade == velocidadeMaxMarcha && marcha != 6){
                  System.out.printf("\nVelocidade máxima da %sª marcha atingida," +
                          "troque para a próxima: %s \n\n", marcha, marcha+1);
              }
