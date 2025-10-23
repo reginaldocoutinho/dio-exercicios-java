@@ -13,7 +13,6 @@ public class Main {
         double valorInteira = inteira.getValor();
         var entrada = new Scanner(System.in);
 
-
         System.out.println("Bem vindo a Bilheteria, gostaria de compra ingresso(s)? (s/n)");
         var comprar = entrada.next();
 
@@ -66,23 +65,12 @@ public class Main {
                                     "\nvalor de %.2f reais", nomeDoFilme, tipoExibicaoFamilia, valorPctFamilia);
                         break;
                 }
-
-
             }
         }else if(comprar.equalsIgnoreCase("n")){
             System.out.println("Até a próxima!");
         }else {
             System.out.println("Resposta invalida!");
         }
-
     }
-
-
-
-
-//        System.out.printf("Filme: %s",nomeDoFilme);
-//        System.out.printf("\nValor da meia entrada %s",valorMeia);
-
-
 }
 
