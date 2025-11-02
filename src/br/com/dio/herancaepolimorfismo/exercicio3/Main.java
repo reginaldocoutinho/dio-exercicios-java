@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String args[]){
+    public static void main(String[]args){
         Relogio relogioBrasileiro = new RelogioBrasileiro();
         Relogio relogioAmericano = new RelogioAmericano();
         Scanner entrada = new Scanner(System.in);

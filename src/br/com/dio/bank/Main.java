@@ -85,7 +85,6 @@ public class Main {
                     }else{
                         System.out.println("You do not have sufficient funds to use the overdraft! balance: "+ account.getOverdraft());
                     }
-
                     break;
                 case 6:
                     var overdraft = account.getOverdraft();
@@ -115,11 +114,7 @@ public class Main {
                     break;
                 default:
                     System.out.println("Invalid option. Please try again.!");
-
             }
         }
-
-
     }
-
 }

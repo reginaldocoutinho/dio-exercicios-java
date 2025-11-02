@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String args[]){
+    public static void main(String[] args){
         Ingresso meiaEntrada = new MeiaEntrada();
         Ingresso pacoteFamilia = new PacoteFamilia();
         Ingresso inteira = new Inteira();
